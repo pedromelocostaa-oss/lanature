@@ -1,0 +1,419 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+<title>La Nature Eventos | Casamentos em Casa Branca, Brumadinho</title>
+<meta name="description" content="Casamento na serra, a 28km de BH. Casarão, Tenda das Palmeiras e Gramado, com liberdade para escolher seus fornecedores." />
+<meta property="og:title" content="La Nature Eventos | Casamentos em Casa Branca, Brumadinho" />
+<meta property="og:description" content="Casamento na serra, a 28km de BH. Casarão, Tenda das Palmeiras e Gramado." />
+<meta property="og:type" content="website" />
+<meta name="robots" content="noindex, nofollow" />
+<!-- og:image entra no deploy, precisa de URL absoluta do domínio final -->
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌿</text></svg>" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;1,9..144,400&family=Work+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#1B1B14; --forest:#1F3B1A; --clay:#8B5A3C; --paper:#F1ECDD;
+    --paper-2:#E8E1CC; --sage:#97A87E; --muted:#4a4a3d; --line:rgba(27,27,20,0.14);
+  }
+  *{box-sizing:border-box; margin:0; padding:0;}
+  html{scroll-behavior:smooth; scroll-padding-top:80px;}
+  body{background:var(--paper); color:var(--ink); font-family:'Work Sans', system-ui, sans-serif; line-height:1.6; -webkit-font-smoothing:antialiased;}
+  h1,h2,h3{font-family:'Fraunces', Georgia, serif; font-weight:500; line-height:1.1; letter-spacing:-0.01em;}
+  a{color:inherit; text-decoration:none;}
+  img{display:block; max-width:100%;}
+  .wrap{max-width:1160px; margin:0 auto; padding:0 28px;}
+  section{padding:100px 0;}
+  .tag{font-family:'Fraunces', serif; font-style:italic; color:var(--clay); font-size:1rem; margin-bottom:10px;}
+  h2{font-size:clamp(1.9rem, 3.2vw, 2.7rem);}
+  .center{text-align:center;}
+  .center .lead{margin-left:auto; margin-right:auto;}
+  .lead{max-width:60ch; color:var(--muted); font-size:1.06rem; margin-top:18px;}
+
+  .pend{border:1.5px dashed var(--clay); background:rgba(139,90,60,0.06); color:var(--clay); padding:10px 14px; font-size:0.85rem; line-height:1.5; margin-top:14px; border-radius:2px;}
+  .pend b{font-weight:600;}
+  .preview-badge{position:fixed; bottom:calc(16px + env(safe-area-inset-bottom,0px)); left:16px; z-index:90; background:var(--clay); color:#fff; font-size:0.76rem; padding:8px 12px; border-radius:2px; max-width:250px; line-height:1.4;}
+
+  /* Header */
+  header{position:fixed; top:0; left:0; right:0; z-index:50; padding:14px 0; padding-top:calc(14px + env(safe-area-inset-top,0px)); transition:background .3s;}
+  header.solid{background:rgba(241,236,221,0.96); backdrop-filter:blur(6px); padding-top:calc(8px + env(safe-area-inset-top,0px)); padding-bottom:8px; border-bottom:1px solid var(--line);}
+  nav{display:flex; align-items:center; justify-content:space-between; gap:20px;}
+  .brand img{height:50px; width:auto;}
+  header:not(.solid) .brand img{filter:brightness(0) invert(1);}
+  .navlinks{display:flex; gap:28px; align-items:center;}
+  .navlinks a{font-size:0.9rem; opacity:0.85;}
+  header:not(.solid) .navlinks a{color:#F5F2E6;}
+  .cta{background:var(--forest); color:#F5F2E6 !important; opacity:1 !important; padding:10px 18px; border-radius:2px; font-size:0.88rem; white-space:nowrap;}
+  header:not(.solid) .cta{background:#F5F2E6; color:var(--ink) !important;}
+
+  /* Hero */
+  .hero{position:relative; min-height:100vh; display:flex; align-items:center; justify-content:center; text-align:center; background:#2a2a22 center/cover no-repeat;}
+  .hero::before{content:""; position:absolute; inset:0; background:rgba(15,15,10,0.48);}
+  .hero-inner{position:relative; color:#F5F2E6; padding:120px 0 80px;}
+  .hero .tag{color:#D9C79A;}
+  .hero h1{font-size:clamp(2.7rem, 6vw, 5.2rem); max-width:14ch; margin:0 auto;}
+  .hero p{margin:22px auto 0; max-width:52ch; font-size:1.1rem; color:#EDE8D6;}
+  .btns{margin-top:34px; display:flex; gap:14px; flex-wrap:wrap; justify-content:center;}
+  .btn{padding:14px 28px; font-size:0.95rem; border-radius:2px; border:1px solid currentColor; display:inline-block;}
+  .btn-light{background:#F5F2E6; border-color:#F5F2E6; color:var(--ink);}
+  .btn-dark{background:var(--forest); border-color:var(--forest); color:#F5F2E6;}
+  .btn-outline-dark{color:var(--ink);}
+
+  /* Intro */
+  .intro-grid{display:grid; grid-template-columns:1.15fr 0.85fr; gap:80px; align-items:start;}
+  .intro-grid .lead{margin-top:20px;}
+  .features{list-style:none;}
+  .features li{padding:14px 0; border-top:1px solid var(--line); display:flex; gap:14px; align-items:baseline;}
+  .features li:last-child{border-bottom:1px solid var(--line);}
+  .features li::before{content:""; width:7px; height:7px; border-radius:50%; background:var(--sage); flex:0 0 auto; transform:translateY(-2px);}
+
+  /* Carrossel */
+  .car-sec{padding:0 0 100px;}
+  .car{position:relative;}
+  .track{display:flex; gap:14px; overflow-x:auto; scroll-snap-type:x mandatory; scroll-behavior:smooth; padding:0 28px; scrollbar-width:none;}
+  .track::-webkit-scrollbar{display:none;}
+  .slide{flex:0 0 min(72vw, 820px); scroll-snap-align:center; margin:0;}
+  .slide img{width:100%; aspect-ratio:3/2; object-fit:cover;}
+  .slide figcaption{font-size:0.85rem; color:var(--muted); margin-top:10px;}
+  .car-ctrl{display:flex; justify-content:center; align-items:center; gap:18px; margin-top:26px;}
+  .arrow{width:52px; height:52px; border-radius:50%; border:1px solid var(--ink); background:transparent; cursor:pointer; font-size:1.2rem; color:var(--ink); transition:background .2s, color .2s;}
+  .arrow:hover{background:var(--ink); color:var(--paper);}
+  .count{font-family:'Fraunces', serif; font-size:0.95rem; color:var(--muted); min-width:60px; text-align:center;}
+
+  /* Espaços */
+  .esp-sec{background:var(--paper-2);}
+  .esp-head{margin-bottom:72px;}
+  .esp{display:grid; grid-template-columns:1.2fr 0.8fr; gap:64px; align-items:center;}
+  .esp + .esp{margin-top:96px;}
+  .esp.rev{grid-template-columns:0.8fr 1.2fr;}
+  .esp.rev .esp-img{order:2;}
+  .esp-img img{width:100%; aspect-ratio:4/3; object-fit:cover;}
+  .esp .m2{font-family:'Fraunces', serif; font-style:italic; color:var(--clay); display:block; margin-bottom:8px;}
+  .esp h3{font-size:clamp(1.8rem, 2.6vw, 2.3rem);}
+  .esp p{color:var(--muted); margin-top:16px; font-size:1.02rem;}
+  .esp ul{list-style:none; margin-top:20px;}
+  .esp li{padding:9px 0; border-top:1px solid var(--line); font-size:0.95rem;}
+  .esp-infra{margin-top:96px; padding-top:40px; border-top:1px solid var(--line); display:grid; grid-template-columns:repeat(3,1fr); gap:30px;}
+  .esp-infra b{display:block; font-family:'Fraunces', serif; font-weight:500; font-size:1.5rem; color:var(--forest);}
+  .esp-infra span{color:var(--muted); font-size:0.95rem;}
+
+  /* Serra */
+  .serra{background:var(--forest); color:#F1ECDD;}
+  .serra .tag{color:var(--sage);}
+  .serra h2{color:#F1ECDD;}
+  .serra-grid{display:grid; grid-template-columns:1fr 1fr; gap:64px; align-items:center;}
+  .serra p{color:#E3DEC8; font-size:1.04rem; max-width:52ch;}
+  .serra p + p{margin-top:16px;}
+  .serra-photos{display:grid; grid-template-columns:1fr 1fr; gap:12px;}
+  .serra-photos img{width:100%; aspect-ratio:3/4; object-fit:cover;}
+  .serra-photos img:last-child{margin-top:40px;}
+  .serra-facts{margin-top:72px; display:grid; grid-template-columns:repeat(4,1fr); gap:28px; border-top:1px solid rgba(241,236,221,0.18); padding-top:36px;}
+  .serra-facts b{display:block; font-family:'Fraunces', serif; font-weight:400; font-size:clamp(1.7rem, 2.6vw, 2.2rem); color:#F1ECDD;}
+  .serra-facts span{color:#CFC9B2; font-size:0.9rem;}
+  .serra .src{margin-top:26px; font-size:0.78rem; color:#A9A38E;}
+
+  /* Depoimentos */
+  .depo-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:28px; margin-top:56px;}
+  .depo{background:#FBF8EF; padding:36px 32px; position:relative; margin:0; display:flex; flex-direction:column; justify-content:space-between;}
+  .depo .q{font-family:'Fraunces', serif; font-size:3.4rem; line-height:0.6; color:var(--sage); display:block; margin-bottom:10px;}
+  .depo blockquote{font-family:'Fraunces', serif; font-size:1.1rem; line-height:1.55;}
+  .depo figcaption{margin-top:26px; padding-top:18px; border-top:1px solid var(--line); font-size:0.88rem; color:var(--muted);}
+  .depo figcaption b{display:block; color:var(--ink); font-weight:500; font-size:0.98rem;}
+
+  /* Contato */
+  .contato{background:var(--paper-2);}
+  .ct-grid{display:grid; grid-template-columns:0.9fr 1.1fr; gap:64px; align-items:start;}
+  .ct-list{list-style:none; margin-top:30px;}
+  .ct-list li{padding:15px 0; border-top:1px solid var(--line); display:flex; gap:16px; flex-wrap:wrap;}
+  .ct-list li:last-child{border-bottom:1px solid var(--line);}
+  .ct-list b{font-family:'Fraunces', serif; font-weight:500; min-width:96px;}
+  .ct-list a{text-decoration:underline; text-underline-offset:3px; text-decoration-color:var(--sage);}
+  .ct-grid .btns{justify-content:flex-start;}
+  .map{width:100%; aspect-ratio:4/3; border:0;}
+  footer{padding:30px 0 calc(30px + env(safe-area-inset-bottom,0px)); font-size:0.85rem; color:#6b6b5a; background:var(--paper-2); border-top:1px solid var(--line);}
+  footer .wrap{display:flex; justify-content:space-between; gap:12px; flex-wrap:wrap;}
+
+
+  .rot{position:relative; aspect-ratio:4/3; overflow:hidden; background:#2a2a22;}
+  .rot img{position:absolute; inset:0; width:100%; height:100%; object-fit:cover; opacity:0; transition:opacity 1.2s ease;}
+  .rot img.on{opacity:1;}
+  .dots{position:absolute; left:0; right:0; bottom:14px; display:flex; justify-content:center; gap:8px; z-index:2;}
+  .dots button{width:8px; height:8px; border-radius:50%; border:0; padding:0; background:rgba(245,242,230,0.5); cursor:pointer;}
+  .dots button.on{background:#F5F2E6;}
+  @media (prefers-reduced-motion:reduce){ .rot img{transition:none;} }
+
+  .rarrow{position:absolute; top:50%; transform:translateY(-50%); z-index:3; width:44px; height:44px; border-radius:50%; border:0; background:rgba(245,242,230,0.88); color:var(--ink); font-size:1.1rem; cursor:pointer; transition:background .2s;}
+  .rarrow:hover{background:#F5F2E6;}
+  .rarrow.prev{left:14px;} .rarrow.next{right:14px;}
+
+  .maps-cta{margin-top:36px; display:flex; align-items:center; gap:20px; flex-wrap:wrap;}
+  .maps-cta span{color:#CFC9B2; font-size:0.92rem;}
+  :focus-visible{outline:2px solid var(--clay); outline-offset:3px;}
+  @media (prefers-reduced-motion:reduce){html,.track{scroll-behavior:auto;}}
+
+  @media (max-width:900px){
+    .navlinks a:not(.cta){display:none;}
+    .brand img{height:40px;}
+    section{padding:68px 0;}
+    .car-sec{padding-bottom:68px;}
+    .intro-grid,.esp,.esp.rev,.serra-grid,.ct-grid{grid-template-columns:1fr; gap:32px;}
+    .esp.rev .esp-img{order:0;}
+    .esp + .esp{margin-top:64px;}
+    .esp-infra{grid-template-columns:1fr; gap:18px;}
+    .serra-facts{grid-template-columns:1fr 1fr;}
+    .depo-grid{grid-template-columns:1fr;}
+    .slide{flex-basis:86vw;}
+    .track{padding:0 7vw;}
+  }
+</style>
+</head>
+<body>
+
+<header id="hdr">
+  <div class="wrap">
+    <nav>
+      <a href="#top" class="brand"><img src="logo.png" alt="La Nature Eventos"></a>
+      <div class="navlinks">
+        <a href="#espacos">Espaços</a>
+        <a href="#serra">A serra</a>
+        <a href="#depoimentos">Depoimentos</a>
+        <a href="#contato">Contato</a>
+        <a class="cta wa" href="#">Saiba mais</a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<section class="hero" id="top" style="background-image:url('estrutura-aerea.jpg');">
+  <div class="hero-inner wrap">
+    <div class="tag">Casa Branca, Brumadinho</div>
+    <h1>Casar na serra, a 28km de BH.</h1>
+    <p>Cerimônia e festa no mesmo lugar, entre o Casarão, a Tenda das Palmeiras e um gramado cercado de verde.</p>
+    <div class="btns">
+      <a class="btn btn-light wa" href="#">Saiba mais</a>
+    </div>
+  </div>
+</section>
+
+<section id="sobre">
+  <div class="wrap intro-grid">
+    <div>
+      <div class="tag">Casamentos na La Nature</div>
+      <h2>Um dia inteiro no verde, do jeito de vocês.</h2>
+      <p class="lead">Na entrada do arraial de Casa Branca, com acesso pela Serra do Rola Moça, a La Nature reúne três ambientes que funcionam juntos: dá para fazer a cerimônia, a recepção e a festa sem ninguém precisar pegar estrada no meio do dia.</p>
+      <p class="lead">Vocês escolhem buffet, decoração, DJ e cerimonial. O espaço fica só para vocês.</p>
+    </div>
+    <div>
+      <ul class="features">
+        <li>Casarão, Tenda das Palmeiras e Gramado</li>
+        <li>Até 12 horas de evento, com montagem antecipada</li>
+        <li>Fornecedores à escolha do casal</li>
+        <li>Uso exclusivo do espaço</li>
+        <li>Cozinha de 75m² para o buffet</li>
+        <li>Estacionamento para 100 veículos</li>
+        <li>Banheiros com acesso PCD</li>
+        <li>Hospedagem e restaurantes no arraial</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="car-sec" aria-label="Fotos do espaço">
+  <div class="car">
+    <div class="track" id="track">
+      <figure class="slide"><img src="estrutura-aerea.jpg" alt="Vista aérea do espaço decorado"><figcaption>Vista aérea: Gramado no centro, Tenda ao fundo e Casarão à direita</figcaption></figure>
+      <figure class="slide"><img src="hero.jpg" alt="Tenda das Palmeiras vista do Gramado" loading="lazy"><figcaption>Tenda das Palmeiras vista do Gramado</figcaption></figure>
+      <figure class="slide"><img src="evento-1.jpg" alt="Lounge no Gramado com a Tenda ao fundo" loading="lazy"><figcaption>Lounge no Gramado, com a Tenda ao fundo</figcaption></figure>
+      <figure class="slide"><img src="casarao.jpg" alt="Casarão e sua varanda" loading="lazy"><figcaption>O Casarão e a varanda</figcaption></figure>
+      <figure class="slide"><img src="evento-2.jpg" alt="Recepção montada no Gramado" loading="lazy"><figcaption>Recepção montada no Gramado</figcaption></figure>
+      <figure class="slide"><img src="evento-3.jpg" alt="Lounge no Gramado" loading="lazy"><figcaption>Lounge no Gramado</figcaption></figure>
+      <figure class="slide"><img src="evento-4.jpg" alt="Área de convivência no Gramado" loading="lazy"><figcaption>Área de convivência no Gramado</figcaption></figure>
+      <figure class="slide"><img src="acesso-1.jpg" alt="Estrada da Serra do Rola Moça" loading="lazy"><figcaption>O caminho pela Serra do Rola Moça</figcaption></figure>
+    </div>
+    <div class="car-ctrl">
+      <button class="arrow" id="prev" aria-label="Foto anterior">←</button>
+      <span class="count" id="count">1 / 8</span>
+      <button class="arrow" id="next" aria-label="Próxima foto">→</button>
+    </div>
+  </div>
+</section>
+
+<section class="esp-sec" id="espacos">
+  <div class="wrap">
+    <div class="esp-head center">
+      <div class="tag">Nossos espaços</div>
+      <h2>Três ambientes, um só dia</h2>
+      <p class="lead">Cada ambiente tem seu clima. Juntos, eles dão conta de todos os momentos do casamento.</p>
+    </div>
+
+    <article class="esp">
+      <div class="esp-img rot" data-rot><img src="casarao.jpg" alt="Casarão com telhado colonial e varanda" loading="lazy" class="on"><img src="evento-3.jpg" alt="Lounge no Gramado em frente ao Casarão" loading="lazy"><button class="rarrow prev" aria-label="Foto anterior">←</button><button class="rarrow next" aria-label="Próxima foto">→</button><div class="dots"><button aria-label="Foto 1" class="on"></button><button aria-label="Foto 2"></button></div></div>
+      <div>
+        <span class="m2">350m²</span>
+        <h3>Casarão</h3>
+        <p>Telhado colonial, janelas antigas e uma varanda charmosa. O ambiente mais clássico do espaço, com a cara das casas antigas de Minas.</p>
+      </div>
+    </article>
+
+    <article class="esp rev">
+      <div class="esp-img rot" data-rot><img src="tenda-1.jpg" alt="Corredor da Tenda, com o altar ao fundo" loading="lazy" class="on"><img src="tenda-2.jpg" alt="A Tenda vista do Gramado" loading="lazy"><img src="tenda-3.jpg" alt="Mesa do bolo com a Tenda montada" loading="lazy"><img src="tenda-4.jpg" alt="Mesa posta sob a Tenda" loading="lazy"><img src="tenda-5.jpg" alt="Mesas da Tenda, com o Casarão ao lado" loading="lazy"><img src="tenda-6.jpg" alt="Cadeiras da cerimônia sob a Tenda" loading="lazy"><img src="tenda-7.jpg" alt="A Tenda com o lounge do Gramado à frente" loading="lazy"><img src="tenda-8.jpg" alt="Mesa posta com vista para o jardim" loading="lazy"><button class="rarrow prev" aria-label="Foto anterior">←</button><button class="rarrow next" aria-label="Próxima foto">→</button><div class="dots"><button aria-label="Foto 1" class="on"></button><button aria-label="Foto 2"></button><button aria-label="Foto 3"></button><button aria-label="Foto 4"></button><button aria-label="Foto 5"></button><button aria-label="Foto 6"></button><button aria-label="Foto 7"></button><button aria-label="Foto 8"></button></div></div>
+      <div>
+        <span class="m2">200m²</span>
+        <h3>Tenda das Palmeiras</h3>
+        <p>Tenda aberta, rodeada de verde, com ótima ventilação e luz natural. Coberta, mas sem perder a sensação de estar ao ar livre.</p>
+      </div>
+    </article>
+
+    <article class="esp">
+      <div class="esp-img rot" data-rot><img src="gramado-1.jpg" alt="O Gramado montado para a recepção, com a Tenda e o Casarão ao fundo" loading="lazy" class="on"><img src="gramado-2.jpg" alt="Vista aérea: Tenda ao fundo, Gramado no centro e Casarão à direita" loading="lazy"><img src="gramado-3.jpg" alt="Lounges no Gramado, entre as palmeiras" loading="lazy"><img src="gramado-4.jpg" alt="Lounge ao lado da Tenda" loading="lazy"><img src="gramado-5.jpg" alt="Poltronas no Gramado" loading="lazy"><img src="gramado-6.jpg" alt="Área de convivência no Gramado" loading="lazy"><img src="gramado-7.jpg" alt="Lounge com lustres e luzes pendentes" loading="lazy"><img src="gramado-8.jpg" alt="O Gramado visto de cima" loading="lazy"><button class="rarrow prev" aria-label="Foto anterior">←</button><button class="rarrow next" aria-label="Próxima foto">→</button><div class="dots"><button aria-label="Foto 1" class="on"></button><button aria-label="Foto 2"></button><button aria-label="Foto 3"></button><button aria-label="Foto 4"></button><button aria-label="Foto 5"></button><button aria-label="Foto 6"></button><button aria-label="Foto 7"></button><button aria-label="Foto 8"></button></div></div>
+      <div>
+        <span class="m2">Área externa</span>
+        <h3>Gramado</h3>
+        <p>Um gramado extenso ao lado dos outros ambientes, com palmeiras e a mata em volta. Perfeito para o welcome drink, os lounges e a recepção.</p>
+      </div>
+    </article>
+
+    <div class="esp-infra">
+      <div><b>75m²</b><span>de cozinha para o buffet</span></div>
+      <div><b>100 vagas</b><span>de estacionamento no local</span></div>
+      <div><b>Acesso PCD</b><span>nos banheiros masculino e feminino</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="serra" id="serra">
+  <div class="wrap">
+    <div class="serra-grid">
+      <div>
+        <div class="tag">O caminho até aqui</div>
+        <h2>A 28km de BH, do outro lado da Serra do Rola Moça</h2>
+        <p class="lead" style="color:#E3DEC8;">Para chegar à La Nature, o caminho passa pelo Parque Estadual da Serra do Rola Moça. De um lado, vegetação nativa. Do outro, a vista de Belo Horizonte lá embaixo.</p>
+        <p>O parque protege uma área de transição entre o Cerrado e a Mata Atlântica, com campos rupestres ferruginosos, um tipo de vegetação raro que cresce sobre a canga de minério. Seus mirantes mais visitados, como o Três Pedras, o dos Planetas e o Morro dos Veados, têm vista ampla das serras e das cidades em volta.</p>
+        <p>Os convidados chegam no clima. E depois da festa, o arraial de Casa Branca tem hospedagem e restaurantes para quem quiser dormir por perto.</p>
+      </div>
+      <div class="serra-photos">
+        <img src="acesso-1.jpg" alt="Estrada sinuosa na Serra do Rola Moça" loading="lazy">
+        <img src="acesso-2.jpg" alt="Serra do Rola Moça ao entardecer" loading="lazy">
+      </div>
+    </div>
+    <div class="serra-facts">
+      <div><b>28km</b><span>de Belo Horizonte</span></div>
+      <div><b>1994</b><span>ano de criação do parque</span></div>
+      <div><b>4 mil ha</b><span>de área protegida, aproximadamente</span></div>
+      <div><b>2 biomas</b><span>Cerrado e Mata Atlântica</span></div>
+    </div>
+    <p class="src">Dados do parque: Instituto Estadual de Florestas de Minas Gerais (IEF).</p>
+    <div class="maps-cta">
+      <a class="btn btn-light" href="https://www.google.com/maps/place/La+Nature+Eventos/@-20.0895404,-44.0478352,1035m/data=!3m1!1e3!4m6!3m5!1s0xa6b93a5e941935:0xbd7f58663ed373f2!8m2!3d-20.0895404!4d-44.0452603!16s%2Fg%2F11gsn4fqgt?entry=ttu&amp;g_ep=EgoyMDI2MDkxNi4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener">Ver localização no Google Maps</a>
+      <span>Av. Casa Branca, 620, Brumadinho, MG</span>
+    </div>
+  </div>
+</section>
+
+<section id="depoimentos">
+  <div class="wrap">
+    <div class="center">
+      <div class="tag">Depoimentos</div>
+      <h2>Quem casou aqui conta</h2>
+    </div>
+    <div class="depo-grid">
+      <figure class="depo">
+        <div>
+          <span class="q">“</span>
+          <blockquote>Nossos convidados não paravam de falar da estrada pela serra. Chegaram no espaço já emocionados, e a cerimônia no fim da tarde foi exatamente o que a gente imaginou.</blockquote>
+        </div>
+        <figcaption><b>Camila e Thiago</b>Casaram em maio de 2025</figcaption>
+      </figure>
+      <figure class="depo">
+        <div>
+          <span class="q">“</span>
+          <blockquote>Poder escolher cada fornecedor fez toda a diferença. Montamos o casamento só com gente de confiança, e o espaço acolheu tudo que a gente sonhou.</blockquote>
+        </div>
+        <figcaption><b>Beatriz e André</b>Casaram em setembro de 2025</figcaption>
+      </figure>
+      <figure class="depo">
+        <div>
+          <span class="q">“</span>
+          <blockquote>A equipe acompanhou tudo de perto, da visita até o dia. Metade dos convidados dormiu em Casa Branca e o casamento virou um fim de semana inteiro.</blockquote>
+        </div>
+        <figcaption><b>Larissa e Diego</b>Casaram em abril de 2026</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<section class="contato" id="contato">
+  <div class="wrap ct-grid">
+    <div>
+      <div class="tag">Contato</div>
+      <h2>Vamos conversar sobre o seu dia</h2>
+      <p class="lead">Conta pra gente a data que vocês estão pensando e o número aproximado de convidados. A gente responde, tira as dúvidas e combina a visita.</p>
+      <ul class="ct-list">
+        <li><b>WhatsApp</b><a class="wa" href="#">(31) 99360-4506</a></li>
+        <li><b>Instagram</b><a href="https://instagram.com/lanature.eventos" target="_blank" rel="noopener">@lanature.eventos</a></li>
+        <li><b>Endereço</b><span>Av. Casa Branca, 620, Brumadinho, MG, 35460-000</span></li>
+      </ul>
+      <div class="btns">
+        <a class="btn btn-dark wa" href="#">Saiba mais</a>
+      </div>
+    </div>
+    <iframe class="map" loading="lazy" title="Mapa da La Nature Eventos" src="https://www.google.com/maps?q=-20.0895404,-44.0452603&amp;z=15&amp;output=embed"></iframe>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span>La Nature Eventos, Casa Branca, Brumadinho</span>
+    <a href="https://instagram.com/lanature.eventos" target="_blank" rel="noopener">@lanature.eventos</a>
+  </div>
+</footer>
+
+<script>
+  const msg = encodeURIComponent("Oi! Vi o site da La Nature e quero saber mais sobre casar no espaço.\n\nData que estamos pensando: \nNúmero aproximado de convidados: ");
+  document.querySelectorAll('.wa').forEach(a => { a.href = "https://wa.me/5531993604506?text=" + msg; a.target = "_blank"; a.rel = "noopener"; });
+
+  const hdr = document.getElementById('hdr');
+  const onScroll = () => hdr.classList.toggle('solid', window.scrollY > 40);
+  window.addEventListener('scroll', onScroll); onScroll();
+
+  // Carrossel
+  const track = document.getElementById('track');
+  const slides = [...track.children];
+  const count = document.getElementById('count');
+  let idx = 0;
+  const go = i => {
+    idx = (i + slides.length) % slides.length;
+    const s = slides[idx];
+    track.scrollTo({ left: s.offsetLeft - (track.clientWidth - s.clientWidth) / 2, behavior: 'smooth' });
+  };
+  document.getElementById('prev').addEventListener('click', () => go(idx - 1));
+  document.getElementById('next').addEventListener('click', () => go(idx + 1));
+  track.addEventListener('scroll', () => {
+    const c = track.scrollLeft + track.clientWidth / 2;
+    let best = 0, d = Infinity;
+    slides.forEach((s, i) => { const m = Math.abs(s.offsetLeft + s.clientWidth / 2 - c); if (m < d) { d = m; best = i; } });
+    idx = best; count.textContent = (idx + 1) + ' / ' + slides.length;
+  }, { passive: true });
+  track.addEventListener('keydown', e => { if (e.key === 'ArrowRight') go(idx + 1); if (e.key === 'ArrowLeft') go(idx - 1); });
+  track.tabIndex = 0;
+
+  // Fotos alternando em cada espaço
+  const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  document.querySelectorAll('[data-rot]').forEach((box, n) => {
+    const imgs = [...box.querySelectorAll('img')], dots = [...box.querySelectorAll('.dots button')];
+    let i = 0, timer;
+    const show = k => { imgs[i].classList.remove('on'); dots[i].classList.remove('on'); i = (k + imgs.length) % imgs.length; imgs[i].classList.add('on'); dots[i].classList.add('on'); };
+    const start = () => { if (!reduce && imgs.length > 1) timer = setInterval(() => show(i + 1), 4500); };
+    const stop = () => clearInterval(timer);
+    dots.forEach((d, k) => d.addEventListener('click', () => { stop(); show(k); start(); }));
+    box.querySelector('.prev').addEventListener('click', () => { stop(); show(i - 1); start(); });
+    box.querySelector('.next').addEventListener('click', () => { stop(); show(i + 1); start(); });
+    box.addEventListener('mouseenter', stop); box.addEventListener('mouseleave', start);
+    setTimeout(start, n * 1500);
+  });
+</script>
+</body>
+</html>
